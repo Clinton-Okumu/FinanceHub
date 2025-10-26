@@ -14,6 +14,10 @@ app.use(rateLimiter);
 app.use(express.json());
 
 //routing
+app.get('/api', (req, res) => {
+  res.send("Welcome to the FinanceHub API!");
+});
+
 app.use("/api/transactions", transactionRoutes);
 
 /**

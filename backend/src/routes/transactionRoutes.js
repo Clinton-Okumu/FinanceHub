@@ -12,10 +12,6 @@ const router = express.Router();
  * Basic routes
  */
 
-router.get("/api", (res) => {
-  res.send("Welcome to the FinanceHub API!");
-});
-
 router.get("/:user_id", getTransactionsByUserId);
 
 router.post("", createTransactions);
